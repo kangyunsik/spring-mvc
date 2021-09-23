@@ -2,9 +2,13 @@
 
 Inflearn study project
 
+--------------------------------------------
+
 ### 1. What is mvc pattern?
 
 The MVC pattern is a methodology that separates the controller and the view, and transmits the information required for the parameters existing in the HttpServletRequest's parameters as an object called the model.
+
+--------------------------------------------
 
 ### 2. How to implement Spring MVC structure
 
@@ -42,6 +46,8 @@ Directly handling HttpServletRequest, Response, etc. is inefficient, so use Mode
 
 It has a method called render, and when the method is executed, the information of the ModelAndView object is rendered as a request and forwarded to the view.
 
+--------------------------------------------
+
 ### 3. Spring MVC Scenario
 
 - Assumption
@@ -60,3 +66,5 @@ From the handler adapter mapping information, an adapter named Y corresponding t
 
 Since the handle method of Y returns void, the DispatcherServlet will create a new ModelAndView object, not including the Model, but only the Path.
 View object including Full(Physical) ViewPath is returned by ViewResolver, and forwarding is performed through the render method of View object.
+
+--------------------------------------------
